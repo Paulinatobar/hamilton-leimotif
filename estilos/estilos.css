@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:opsz,wght@6..96,400;6..96,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-hamilton: #d4af37;
+	--color-burr: #8b4513;
+	--color-eliza: #e8b4d9;
+	--color-angelica: #ff6b9d;
+	--color-washington: #2c5f8d;
+	--color-madison: #6b8e23;
+	--color-jefferson: #8b008b;
+	--bg-dark: #0a0a0a;
+	--bg-section: #121212;
+	--text-light: #f5f5f5;
+	--text-soft: #dcdcdc;
+}
+
+body {
+	font-family: 'Libre Caslon Text', serif;
+	background: linear-gradient(135deg, #0a0a0a 0%, #1a0f0f 100%);
+	color: var(--text-light);
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* ipografías base */
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Bodoni Moda SC', serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+p,
+li {
+	font-family: 'Libre Caslon Text', serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.9;
+	color: var(--text-soft);
+}
+
+
+/*header y hero*/
+
+header {
+	position: relative;
+	background: var(--bg-dark);
+}
+
+.hero {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-title {
+	font-family: 'Bodoni Moda SC', serif;
+	font-size: clamp(3rem, 8vw, 6rem);
+	font-weight: 400;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 4rem 2rem 3rem;
+	background: linear-gradient(135deg, #0a0a0a 0%, #1a0f0f 100%);
+	width: 100%;
+	color: var(--text-soft);
+	text-shadow: 0 0 40px rgba(212, 175, 55, 0.8), 0 0 80px rgba(212, 175, 55, 0.4);
+	animation: fadeInGlow 2s ease-in;
+}
+
+@keyframes fadeInGlow {
+	from {
+		opacity: 0;
+		text-shadow: 0 0 0px rgba(212, 175, 55, 0);
+	}
+	to {
+		opacity: 1;
+		text-shadow: 0 0 40px rgba(212, 175, 55, 0.8), 0 0 80px rgba(212, 175, 55, 0.4);
+	}
+}
+
+/* video */
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	overflow: hidden;
+}
+
+.video-container::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient( to bottom, rgba(10, 10, 10, 0.3) 0%, rgba(10, 10, 10, 0.1) 50%, rgba(10, 10, 10, 0.5) 100%);
+	z-index: 1;
+	pointer-events: none;
+}
+
+.video-container video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	filter: brightness(0.6) contrast(1.2);
+}
+
+
+/* introducción hamilton */
+
+.intro-section {
+	padding: 6rem 2rem;
+	background: var(--bg-section);
+	position: relative;
+}
+
+.intro-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, var(--color-hamilton), transparent);
+}
+
+.intro-section h2 {
+	font-family: 'Bodoni Moda SC', serif;
+	font-size: 2.5rem;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 3rem;
+	color: var(--color-hamilton);
+}
+
+.intro-section div {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.intro-section p {
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 1.15rem;
+	line-height: 1.9;
+	color: var(--text-soft);
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+
+/* non-stop sección*/
+
+.non-stop-section {
+	padding: 6rem 2rem;
+	background: linear-gradient(135deg, #0a0a0a 0%, #1a0f0f 100%);
+}
+
+.non-stop-section h2 {
+	font-family: 'Bodoni Moda SC', serif;
+	font-size: 2.5rem;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 4rem;
+	color: var(--color-hamilton);
+}
+
+
+/* info non-stop*/
+
+.content-wrapper {
+	display: flex;
+	gap: 60px;
+	align-items: flex-start;
+	justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.text-content {
+	flex: 1;
+	max-width: 720px;
+	border-left: 3px solid var(--color-hamilton);
+	padding-left: 24px;
+}
+
+.text-content p {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.text-content a {
+	color: var(--color-hamilton);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.3s ease;
+}
+
+.text-content a:hover {
+	border-bottom-color: var(--color-hamilton);
+}
+
+
+/* carrusel */
+
+.carousel-container {
+	flex: 0 0 480px;
+	position: relative;
+}
+
+.carousel {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 4/3;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: 0 10px 40px rgba(255, 255, 255, 0.08);
+}
+
+.carousel-slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-slide.active {
+	opacity: 1;
+}
+
+.carousel-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(212, 175, 55, 0.3);
+	color: white;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+	z-index: 10;
+	transition: background 0.3s ease;
+	border-radius: 4px;
+}
+
+.carousel-btn:hover {
+	background: rgba(212, 175, 55, 0.6);
+}
+
+.carousel-btn.prev {
+	left: 10px;
+}
+
+.carousel-btn.next {
+	right: 10px;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px;
+	z-index: 10;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.dot.active {
+	background: var(--color-hamilton);
+}
+
+
+/* columna canción non-stop */
+.container {
+	background: var(--bg-section);
+	padding: 4rem 2rem;
+	display: flex;
+	gap: 3rem;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+main {
+	padding: 0 2rem 2rem;
+	width: 100%;
+	flex: 1;
+	min-width: 0;
+}
+
+main h1 {
+	font-family: 'Bodoni Moda SC', serif;
+	font-size: 3rem;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 3rem;
+	color: var(--color-hamilton);
+}
+
+
+/* versos de la canción */
+.verse {
+	margin: 2rem 0;
+	padding: 1.5rem;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	border-left: 4px solid transparent;
+	position: relative;
+}
+
+.verse:hover {
+	background: rgba(255, 255, 255, 0.02);
+	transform: translateX(5px);
+}
+
+.character {
+	font-family: 'Arimo', sans-serif;
+	font-weight: 600;
+	font-size: 0.9rem;
+	letter-spacing: 2px;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+
+.verse p:not(.character) {
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	margin: 0.3rem 0;
+}
+
+
+/* color por personaje */
+.hamilton {
+	border-left-color: var(--color-hamilton);
+}
+
+.hamilton .character {
+	color: var(--color-hamilton);
+}
+
+.burr {
+	border-left-color: var(--color-burr);
+}
+
+.burr .character {
+	color: var(--color-burr);
+}
+
+.eliza {
+	border-left-color: var(--color-eliza);
+}
+
+.eliza .character {
+	color: var(--color-eliza);
+}
+
+.angelica {
+	border-left-color: var(--color-angelica);
+}
+
+.angelica .character {
+	color: var(--color-angelica);
+}
+
+.washington {
+	border-left-color: var(--color-washington);
+}
+
+.washington .character {
+	color: var(--color-washington);
+}
+
+.ensemble .character {
+	color: #999;
+}
+
+
+/* motif click*/
+.motif {
+	cursor: pointer;
+	transition: all 0.3s ease;
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	display: inline;
+	position: relative;
+	pointer-events: auto;
+	font-weight: 500;
+}
+
+.motif.m3 {
+	background: rgba(212, 175, 55, 0.15);
+	border-bottom: 2px solid rgba(212, 175, 55, 0.4);
+	color: var(--color-hamilton);
+}
+
+.motif.m3:hover {
+	background: rgba(212, 175, 55, 0.3);
+	border-bottom-color: var(--color-hamilton);
+	box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.motif.m4 {
+	background: rgba(44, 95, 141, 0.15);
+	border-bottom: 2px solid rgba(44, 95, 141, 0.4);
+	color: var(--color-washington);
+}
+
+.motif.m4:hover {
+	background: rgba(44, 95, 141, 0.3);
+	border-bottom-color: var(--color-washington);
+	box-shadow: 0 0 8px rgba(44, 95, 141, 0.4);
+}
+
+.motif.m5 {
+	background: rgba(44, 95, 141, 0.15);
+	border-bottom: 2px solid rgba(44, 95, 141, 0.4);
+	color: var(--color-washington);
+}
+
+.motif.m5:hover {
+	background: rgba(44, 95, 141, 0.3);
+	border-bottom-color: var(--color-washington);
+	box-shadow: 0 0 8px rgba(44, 95, 141, 0.4);
+}
+
+.motif.m6 {
+	background: rgba(232, 180, 217, 0.15);
+	border-bottom: 2px solid rgba(232, 180, 217, 0.4);
+	color: var(--color-eliza);
+}
+
+.motif.m6:hover {
+	background: rgba(232, 180, 217, 0.3);
+	border-bottom-color: var(--color-eliza);
+	box-shadow: 0 0 8px rgba(232, 180, 217, 0.4);
+}
+
+.motif.m7 {
+	background: rgba(232, 180, 217, 0.15);
+	border-bottom: 2px solid rgba(232, 180, 217, 0.4);
+	color: var(--color-eliza);
+}
+
+.motif.m7:hover {
+	background: rgba(232, 180, 217, 0.3);
+	border-bottom-color: var(--color-eliza);
+	box-shadow: 0 0 8px rgba(232, 180, 217, 0.4);
+}
+
+.motif.m8 {
+	background: rgba(255, 107, 157, 0.15);
+	border-bottom: 2px solid rgba(255, 107, 157, 0.4);
+	color: var(--color-angelica);
+}
+
+.motif.m8:hover {
+	background: rgba(255, 107, 157, 0.3);
+	border-bottom-color: var(--color-angelica);
+	box-shadow: 0 0 8px rgba(255, 107, 157, 0.4);
+}
+
+.motif.m9 {
+	background: rgba(232, 180, 217, 0.15);
+	border-bottom: 2px solid rgba(232, 180, 217, 0.4);
+	color: var(--color-eliza);
+}
+
+.motif.m9:hover {
+	background: rgba(232, 180, 217, 0.3);
+	border-bottom-color: var(--color-eliza);
+	box-shadow: 0 0 8px rgba(232, 180, 217, 0.4);
+}
+
+.motif.m10 {
+	background: rgba(139, 69, 19, 0.15);
+	border-bottom: 2px solid rgba(139, 69, 19, 0.4);
+	color: var(--color-burr);
+}
+
+.motif.m10:hover {
+	background: rgba(139, 69, 19, 0.3);
+	border-bottom-color: var(--color-burr);
+	box-shadow: 0 0 8px rgba(139, 69, 19, 0.4);
+}
+
+.motif.m11 {
+	background: rgba(139, 69, 19, 0.15);
+	border-bottom: 2px solid rgba(139, 69, 19, 0.4);
+	color: var(--color-burr);
+}
+
+.motif.m11:hover {
+	background: rgba(139, 69, 19, 0.3);
+	border-bottom-color: var(--color-burr);
+	box-shadow: 0 0 8px rgba(139, 69, 19, 0.4);
+}
+
+.motif.m12 {
+	background: rgba(212, 175, 55, 0.15);
+	border-bottom: 2px solid rgba(212, 175, 55, 0.4);
+	color: var(--color-hamilton);
+}
+
+.motif.m12:hover {
+	background: rgba(212, 175, 55, 0.3);
+	border-bottom-color: var(--color-hamilton);
+	box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.motif.m13 {
+	background: rgba(212, 175, 55, 0.15);
+	border-bottom: 2px solid rgba(212, 175, 55, 0.4);
+	color: var(--color-hamilton);
+}
+
+.motif.m13:hover {
+	background: rgba(212, 175, 55, 0.3);
+	border-bottom-color: var(--color-hamilton);
+	box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.motif.selected,
+.motif.active {
+	filter: brightness(1.3);
+	box-shadow: 0 0 12px currentColor;
+	border-bottom-width: 3px;
+}
+
+aside {
+	flex: 0 0 55%;
+	min-width: 450px;
+	position: sticky;
+	top: 2rem;
+	height: fit-content;
+	max-height: calc(100vh - 4rem);
+	overflow-y: auto;
+}
+
+
+/* Scrollbar */
+
+aside::-webkit-scrollbar {
+	width: 10px;
+}
+
+aside::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 5px;
+}
+
+aside::-webkit-scrollbar-thumb {
+	background: rgba(212, 175, 55, 0.4);
+	border-radius: 5px;
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+	background: rgba(212, 175, 55, 0.6);
+}
+
+.sidebar {
+	background: rgba(18, 18, 18, 0.8);
+	border-radius: 12px;
+	padding: 1.5rem;
+	border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.sidebar-svg-container {
+	width: 100%;
+	overflow-y: auto;
+	max-height: 80vh;
+}
+
+.sidebar-svg-container svg {
+	width: 100%;
+	height: auto;
+}
+
+
+/* columna leimotif*/
+
+#sidebar-container {
+	background: rgba(18, 18, 18, 0.95);
+	border-radius: 12px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+#sidebar-content {
+	margin-bottom: 2rem;
+}
+
+#sidebar-content h2 {
+	font-family: 'Bodoni Moda SC', serif;
+	font-size: 1.8rem;
+	color: var(--text-light);
+	margin-bottom: 1.5rem;
+	letter-spacing: 3px;
+}
+
+
+/* Colores específicos para el título según el leitmotif */
+#sidebar-content .hamilton h2 {
+	color: var(--color-hamilton);
+}
+
+#sidebar-content .burr h2 {
+	color: var(--color-burr);
+}
+
+#sidebar-content .eliza h2 {
+	color: var(--color-eliza);
+}
+
+#sidebar-content .angelica h2 {
+	color: var(--color-angelica);
+}
+
+#sidebar-content .washington h2 {
+	color: var(--color-washington);
+}
+
+#sidebar-content h3 {
+	font-family: 'Arimo', sans-serif;
+	font-size: 1.2rem;
+	color: var(--text-light);
+	margin: 1.5rem 0 0.8rem;
+	letter-spacing: 1px;
+}
+
+#sidebar-content p {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: var(--text-soft);
+	margin-bottom: 1rem;
+}
+
+#sidebar-content ul {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+}
+
+#sidebar-content li {
+	padding: 0.7rem 1rem;
+	margin: 0.5rem 0;
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 1rem;
+	border-left: 3px solid transparent;
+}
+
+#sidebar-content li.song:hover {
+	background: rgba(212, 175, 55, 0.2);
+	transform: translateX(5px);
+	color: var(--color-hamilton);
+	border-left-color: var(--color-hamilton);
+}
+
+
+/* Spotify */
+#player {
+	margin: 2rem 0;
+	border-radius: 12px;
+	width: 100%;
+	height: 352px;
+}
+
+
+/* botón siguiente leimotif */
+#button-next {
+	width: 100%;
+	padding: 1rem 2rem;
+	font-family: 'Arimo', sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background: var(--color-hamilton);
+	color: #0a0a0a;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+
+#button-next:hover {
+	background: var(--text-light);
+	box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+	transform: translateY(-2px);
+}
+
+
+/* visualización leimotif */
+#arc-viz {
+	margin-top: 2rem;
+	padding: 2rem;
+	background: rgba(18, 18, 18, 0.95);
+	border-radius: 12px;
+	border: 1px solid rgba(212, 175, 55, 0.2);
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+#arc-viz h4 {
+	font-family: 'Bodoni Moda SC', serif;
+	font-size: 1.4rem;
+	color: var(--color-hamilton);
+	margin-bottom: 1.5rem;
+	text-align: center;
+	letter-spacing: 3px;
+	position: sticky;
+	top: 0;
+	background: rgba(18, 18, 18, 0.95);
+	padding: 1rem 0;
+	z-index: 5;
+}
+
+#arc-viz svg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+/* estilos para el SVG (visualización de canciones conectadas por leimotif) */
+#arc-viz text {
+	font-size: 10px !important;
+	fill: #999 !important;
+	font-family: 'Arimo', sans-serif !important;
+}
+
+#arc-viz circle {
+	fill: #666 !important;
+}
+
+#arc-viz .arc path {
+	transition: all 0.3s ease;
+	opacity: 0.2;
+}
+
+#arc-viz .arc.active path {
+	opacity: 1 !important;
+	stroke: var(--color-hamilton) !important;
+	stroke-width: 3 !important;
+	filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.8));
+}
+
+#arc-viz.hamilton .arc.active path {
+	stroke: var(--color-hamilton) !important;
+	filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.8));
+}
+
+#arc-viz.burr .arc.active path {
+	stroke: var(--color-burr) !important;
+	filter: drop-shadow(0 0 10px rgba(139, 69, 19, 0.8));
+}
+
+#arc-viz.eliza .arc.active path {
+	stroke: var(--color-eliza) !important;
+	filter: drop-shadow(0 0 10px rgba(232, 180, 217, 0.8));
+}
+
+#arc-viz.angelica .arc.active path {
+	stroke: var(--color-angelica) !important;
+	filter: drop-shadow(0 0 10px rgba(255, 107, 157, 0.8));
+}
+
+#arc-viz.washington .arc.active path {
+	stroke: var(--color-washington) !important;
+	filter: drop-shadow(0 0 10px rgba(44, 95, 141, 0.8));
+}
+
+
+/* Scrollbar personalizado para svg */
+#arc-viz::-webkit-scrollbar {
+	width: 8px;
+}
+
+#arc-viz::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 4px;
+}
+
+#arc-viz::-webkit-scrollbar-thumb {
+	background: rgba(212, 175, 55, 0.3);
+	border-radius: 4px;
+}
+
+#arc-viz::-webkit-scrollbar-thumb:hover {
+	background: rgba(212, 175, 55, 0.5);
+}
+
+
+/* Clases específicas por personaje en el contenido dinámico */
+
+#sidebar-content .hamilton {
+	border-left: 3px solid var(--color-hamilton);
+	padding-left: 1rem;
+}
+
+#sidebar-content .burr {
+	border-left: 3px solid var(--color-burr);
+	padding-left: 1rem;
+}
+
+#sidebar-content .eliza {
+	border-left: 3px solid var(--color-eliza);
+	padding-left: 1rem;
+}
+
+#sidebar-content .angelica {
+	border-left: 3px solid var(--color-angelica);
+	padding-left: 1rem;
+}
+
+#sidebar-content .washington {
+	border-left: 3px solid var(--color-washington);
+	padding-left: 1rem;
+}
+
+
+/* Estilos para el contenedor de texto del motif */
+
+.motif-content-wrapper {
+	display: flex;
+	gap: 1.5rem;
+	align-items: flex-start;
+	margin: 1.5rem 0;
+}
+
+.motif-text {
+	flex: 1;
+}
+
+.motif-text p {
+	margin-bottom: 1rem;
+}
+
+/* Este código fue formateado en: https://pinetools.com/es/formateador-css */

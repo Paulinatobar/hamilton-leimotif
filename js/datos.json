@@ -1,0 +1,432 @@
+{
+    "motifs": [
+        {
+            "id": "m3",
+            "name": "Just you wait",
+            "class": "hamilton",
+            "character": "Alexander Hamilton",
+            "texto_motif": "<p>Cuando el musical presenta a Alexander Hamilton, este acaba de llegar como un inmigrante a la ciudad de Nueva York desde la isla caribeña de Saint Croix, en ese entonces parte de las Indias Orientales Danesas, con el auspicio de una familia mercante local.</p><p>Huérfano y sin familia, Hamilton está decidido a hacer algo por triunfar en la vida. Esta ambición se presenta en todo el primer acto desde sus estudios en leyes en King's College, su participación como oficial en la guerra de Independencia, hasta consolidarse como Secretario del Tesoro para el primer presidente de los EEUU en la canción “Non Stop”. Este leitmotif no aparece en el segundo acto.</p>",
+            "songs": [
+                {
+                    "song_name": "Alexander Hamilton",
+                    "song_id": "c1",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/4TTV7EcfroSLWzXRY6gLv6?utm_source=generator&t=255"
+                },
+                {
+                    "song_name": "My shot",
+                    "song_id": "c3",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/4cxvludVmQxryrnx1m9FqL?utm_source=generator"
+                },
+                {
+                    "song_name": "Satisfied",
+                    "song_id": "c11",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/3dP0pLbg9OfVwssDjp9aT0?utm_source=generator&t=205"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "c23",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=608"
+                }
+            ]
+        },
+        {
+            "id": "m4",
+            "name": "Right hand man",
+            "class": "washington",
+            "character": "George Washington",
+            "texto_motif": "<p>Es un tema del primer acto representa la relación entre Hamilton y su mentor el general George Washington y aparece en las siguientes canciones:</p><ul><li>“Right hand man”: George Washington convence a Hamilton para ser su edecán y apoyar en el esfuerzo de la guerra.</li><li>“Guns and ships”: después de castigar a Hamilton por asistir en el duelo entre Laurens y el General Lee a pesar de sus órdenes. Washington se da cuenta que lo necesita para ganar la guerra.</li><li>En “Non stop” Washington como primer presidente de un nuevo país le pide a Hamilton que lo apoye inaugurando el Departamento del Tesoro y le da la responsabilidad de financiar al nuevo gobierno.</li>",
+            "songs": [
+                {
+                    "song_name": "Right hand man",
+                    "song_id": "c8",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/3nJYcY9yvKP8Oi2Ml8brXt?utm_source=generator&t=114"
+                },
+                {
+                    "song_name": "Guns and ships",
+                    "song_id": "c18",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7m9XR7FquXLP1FewdAcNS9?utm_source=generator&t=112"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "c23",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=513"
+                }
+            ]
+        },
+        {
+            "id": "m5",
+            "name": "History has its eyes on you",
+            "class": "washington",
+            "character": "George Washington",
+            "texto_motif": "<p>Al regresar al lado de Washington después del duelo con Lee éste le aconseja a Hamilton que uno tiene poco control de cómo son las circunstancias y quién contará la historia así que Hamilton debe comportarse con responsabilidad. El tema recurre en el segundo acto cuando Washington decide dar un paso al costado al terminar su presidencia (así comunicar que no es otro rey) dando un ejemplo claro de cómo comportarse a la altura de las circunstancias (“One last time”) y finalmente en “Hurricaine” donde Hamilton decide admitir que tuvo una amorío con una señora casada para defenderse de acusaciones de corrupción a pesar que le causaría un daño importante a Eliza, su esposa. El tema también actúa a nivel de metatema, ya que el público sabe que Hamilton pasó a la historia. </p>",
+            "songs": [
+                {
+                    "song_name": "History has its eyes on you",
+                    "song_id": "c19",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/1mGO8rwCE9zk7H06OxcU5m?utm_source=generator"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "c23",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=549"
+                },
+                {
+                    "song_name": "One last time",
+                    "song_id": "c32",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/0Iys022UwQ8xBfxE1g4nWZ?utm_source=generator"
+                },
+                {
+                    "song_name": "Hurricane",
+                    "song_id": "c36",
+                    "song_act": 1,
+                    "song_sang_by": "George Washington",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=206"
+                }
+            ]
+        },
+        {
+            "id": "m6",
+            "name": "Look around",
+            "class": "eliza",
+            "character": "Eliza Schuyler",
+            "texto_motif": "<p>El tema trata inicialmente sobre disfrutar los logros y el momento presente. Al principio aparece en “The Schuyler sisters” canción que sirve de introducción de las hermanas para destacar como es la vida en la Nueva York antes de la independencia. Después Eliza lo adopta como una solicitud a su marido, Alexander Hamilton para que disfrute lo que ha conseguido en el momento del nacimiento de su hijo (“That would be enough”). En el primer acto aparece el llamado de una esposa y Hamilton se lo canta a Eliza en “Non stop” para justificar su ambición de ser ministro de estado.  En el segundo acto se aprecia la sabiduría del consejo cuando la ambición de Hamilton desencadena en su ruina política (“Take a break” y éste pierde a su hijo sin haber aprovechado a su lado aunque da pie a la reconciliación final entre Hamilton y Eliza (“It’s quiet uptown”).</p>",
+            "songs": [
+                {
+                    "song_name": "The Schuyler sisters",
+                    "song_id": "c5",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
+                },
+                {
+                    "song_name": "That would be enough",
+                    "song_id": "c17",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "c23",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=308"
+                },
+                {
+                    "song_name": "Take a break",
+                    "song_id": "c26",
+                    "song_act": 2,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
+                },
+                {
+                    "song_name": "It's quiet uptown",
+                    "song_id": "c41",
+                    "song_act": 2,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
+                }
+            ]
+        },
+        {
+            "id": "m7",
+            "name": "Helpless",
+            "class": "eliza",
+            "character": "Eliza Schuyler",
+            "texto_motif": "<p>Helpless representa tres momentos particulares para las mujeres de la vida de Hamilton. Helpless es como se sentía Hamilton de niño al ver a su madre morir. Es el motivo de Eliza cuando se enamora perdidamente de él “Helpless”). Aparece nuevamente cuando se revive el momento en que se conocieron Eliza y Hamilton del punto de vista de su hermana Angelica (“Satisfied”). Y finalmente el tema aparece nuevamente en el momento en que Hamilton se deja seducir por María Reynolds (“Say no to this”).</p>",
+            "songs": [
+                {
+                    "song_name": "Helpless",
+                    "song_id": "C10",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/54Sc7mZQ1RM03STpk4SfaA?utm_source=generator&t=011"
+                },
+                {
+                    "song_name": "Satisfied",
+                    "song_id": "C11",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/3dP0pLbg9OfVwssDjp9aT0?utm_source=generator&t=240"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=308"
+                },
+                {
+                    "song_name": "Say no to this",
+                    "song_id": "C27",
+                    "song_act": 2,
+                    "song_sang_by": "Maria Reynolds",
+                    "uri_spotify": "https://open.spotify.com/embed/track/3s9itRgJYcKhem01P17865?utm_source=generator&t=246"
+                }
+            ]
+        },
+        {
+            "id": "m8",
+            "name": "Satisfied",
+            "class": "angelica",
+            "character": "Angelica Schuyler",
+            "texto_motif": "<p>Angelica Schuyler, la hermana de Elisa, es el equivalente intelectual de Alexander Hamilton y comparten ambos la característica de la ambición que nunca se puede satisfacer (“Satisfied”). A pesar de tener este vínculo de iguales con Hamilton, Angelica entiende que la ambición tiene un lado negativo (“Non stop”), apoya a su hermana cuando Hamilton pública su relación con María Reynolds y le recrimina si causarle daño a sus seres queridos finalmente lo ha satisfecho (“The Reynolds Pamphlet”).</p>",
+            "songs": [
+                {
+                    "song_name": "Satisfied",
+                    "song_id": "C11",
+                    "song_act": 1,
+                    "song_sang_by": "Angelica Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/3dP0pLbg9OfVwssDjp9aT0?utm_source=generator"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Angelica Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=543"
+                },
+                {
+                    "song_name": "Reynold Panphlet",
+                    "song_id": "C27",
+                    "song_act": 2,
+                    "song_sang_by": "Angelica Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7D1Lf7N7AtCuEq5PGJtIPz?utm_source=generator&t=101"
+                }
+            ]
+        },
+        {
+            "id": "m9",
+            "name": "Enough",
+            "class": "eliza",
+            "character": "Eliza Schuyler",
+            "texto_motif": "<p>Es el motivo que representa el viaje emocional de Eliza de una mujer insegura centrada en la familia en la guardiana del legado de Hamilton. En “That would be enough” pidiéndole a Hamilton que esté satisfecho con la familia que han construido y no persiguiendo la gloria. Después de que se revela el amorío de Hamilton con María Reynolds ella decide que la ambición de su esposo no es su responsabilidad y quema sus cartas (“Burn” donde la palabra “enough” no figura). Reconciliados después de la muerte de su hijo Hamilton reconoce la felicidad que le ha dado Eliza (“It’s quiet uptown” y “Best of wives”) Hasta la canción final donde Eliza toma las riendas de la historia de su esposo cuestionandose si logrará hacer suficiente por su legado.</p>",
+            "songs": [
+                {
+                    "song_name": "That would be enough",
+                    "song_id": "C17",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/6oF8ueLn5hIl4PRp17sxW6?utm_source=generator"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=356"
+                },
+                {
+                    "song_name": "It's quiet uptown",
+                    "song_id": "C41",
+                    "song_act": 2,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/40LYL1Z6xgCn5cBybo5K0D?utm_source=generator&t=144"
+                },
+                {
+                    "song_name": "Best of wives",
+                    "song_id": "C44",
+                    "song_act": 2,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/1dZutYKh4BtPlxbC81wV34?utm_source=generator&t=023"
+                },
+                {
+                    "song_name": "Who lives who dies who tells your story",
+                    "song_id": "C46",
+                    "song_act": 2,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7EsSVPxaYoAZjQwhspJBs2?utm_source=generator&t=222"
+                }
+            ]
+        },
+        {
+            "id": "m10",
+            "name": "Take a stand",
+            "class": "burr",
+            "character": "Aaron Burr",
+            "texto_motif": "<p>La principal causa del conflicto entre Hamilton y Aaron Burr se centra en este tema. Hamilton considera que Burr es una persona no confiable porque no es capaz de comprometerse con las causas aún cuando participa en ellas. Burr cree que Hamilton es apto a tomar malas decisiones por causas que no valen la pena. Convertidos en rivales políticos para el segundo acto Burr se entera que Hamilton articuló la campaña que evitó que llegara a la presidencia y adicionalmente habló mal de él en una carta que se hizo pública, éste el duelo en el cual termina con la vida de Hamilton.</p>",
+            "songs": [
+                {
+                    "song_name": "Aaron Burr, Sir",
+                    "song_id": "C2",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/6dr7ekfhlbquvsVY8D7gyk?utm_source=generator&t=217"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=175"
+                },
+                {
+                    "song_name": "The room where it happens",
+                    "song_id": "C28",
+                    "song_act": 2,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/2TK2KSrzXD6W01qjXVjNGh?utm_source=generator&t=258"
+                },
+                {
+                    "song_name": "Your obedient servant",
+                    "song_id": "C43",
+                    "song_act": 2,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/6SHI6STEW51cQkAXBRpLNj?utm_source=generator&t=159"
+                }
+            ]
+        },
+        {
+            "id": "m11",
+            "name": "Wait for it",
+            "character": "Aaron Burr",
+            "class": "burr",
+            "texto_motif": "<p>Este leitmotif resume la filosofía de Aaron Burr. Aunque igual de ambicioso que Hamilton, Burr es más precavido, buscando la oportunidad precisa que se presenta para lograr sus objetivos. En el primer acto eso lo hace en extremo precavido pero en el segundo acto cuando Hamilton le repite su frase (“Room where it happens”) él decide que es tiempo de tomar más acción y logra superar Hamilton en influencia después de su caída (“Hurricane”). Finalmente en el momento del duelo con Hamilton, Burr no duda en disparar lo que evita que se de cuenta que Hamilton no le apuntó a él para su tiro y esto finalmente lo arruina(“The world was wide enough”).</p>",
+            "songs": [
+                {
+                    "song_name": "Wait for it",
+                    "song_id": "C13",
+                    "song_act": 1,
+                    "song_sang_by": "Aaron Burr",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7EqpEBPOohgk7NnKvBGFWo?utm_source=generator"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Aaron Burr",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=189"
+                },
+                {
+                    "song_name": "Room where it happens",
+                    "song_id": "C28",
+                    "song_act": 2,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/2TK2KSrzXD6W01qjXVjNGh?utm_source=generator&t=344"
+                },
+                {
+                    "song_name": "Hurricane",
+                    "song_id": "C28",
+                    "song_act": 2,
+                    "song_sang_by": "Aaron Burr",
+                    "uri_spotify": "https://open.spotify.com/embed/track/16sNPUamj4vnA7uQLozRpU?utm_source=generator&t=134"
+                },
+                {
+                    "song_name": "The world was wide enough",
+                    "song_id": "C45",
+                    "song_act": 2,
+                    "song_sang_by": "Aaron Burr",
+                    "uri_spotify": "https://open.spotify.com/embed/track/0P09TBGSKiQwfUsEh1UafT?utm_source=generator"
+                }
+            ]
+        },
+        {
+            "id": "m12",
+            "name": "My shot",
+            "class": "hamilton",
+            "character": "Alexander Hamilton",
+            "texto_motif": "<p>“I’m not throwing away my shot” es el tema central que describe la personalidad de Alexander Hamilton. Durante todo el primer acto Hamilton no desperdicia ninguna oportunidad y usará todos sus talentos para surgir en la vida. El aprovechar el tiro aparece durante el primer acto hasta su consolidación en “Non stop”. Desaparece durante el segundo acto durante su caída pero cuando su hijo Philip va a participar en un duelo para defenderlo, él le recomienda que no dispare (“Blow us all away”). En su duelo con Aaron Burr, Hamilton sigue su propio consejo y decide que es más importante desperdiciar su tiro y apostar por su legado que ser recordado como el asesino de Burr. Similar a otros leitmotifs “My shot” funciona a un nivel de meta tema, ya que el público sabe que Hamilton disparará al aire.</p> ",
+            "songs": [
+                {
+                    "song_name": "My shot",
+                    "song_id": "C3",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/4cxvludVmQxryrnx1m9FqL?utm_source=generator"
+                },
+                {
+                    "song_name": "Right hand man",
+                    "song_id": "C8",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/3nJYcY9yvKP8Oi2Ml8brXt?utm_source=generator&t=414"
+                },
+                {
+                    "song_name": "Stay alive",
+                    "song_id": "C14",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/27MB0qHaYAZiTlwg25js1Y?utm_source=generator&t=230"
+                },
+                {
+                    "song_name": "Yorktown",
+                    "song_id": "C20",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/733tju3KUeatsbjcTRQ04i?utm_source=generator&t=031"
+                },
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=605"
+                },
+                {
+                    "song_name": "The world was wide enough",
+                    "song_id": "45",
+                    "song_act": 2,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/0P09TBGSKiQwfUsEh1UafT?utm_source=generator&t=308"
+                }
+            ]
+        },
+        {
+            "id": "m13",
+            "name": "Running out of time",
+            "class": "hamilton",
+            "character": "Alexander Hamilton",
+            "texto_motif": "<p>“Why do you write like you’re running out of time” es el leitmotif principal que se origina en “Non stop” y culmina en las últimas tres canciones del musical. Como con otros leitmotifs, el público sabe como y cuando Hamilton morirá porque es una figura histórica muy conocida. De esta forma “Running out of time” representa tanto el paso rápido del tiempo para los personajes (la figura de tempus fugit) y para el público es un recordatorio de la muerte del personaje principal (figura de memento mori).</p> ",
+            "songs": [
+                {
+                    "song_name": "Non stop",
+                    "song_id": "C23",
+                    "song_act": 1,
+                    "song_sang_by": "Burr",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=443"
+                },
+                {
+                    "song_name": "Best of wives",
+                    "song_id": "C44",
+                    "song_act": 1,
+                    "song_sang_by": "Eliza Schuyler",
+                    "uri_spotify": "https://open.spotify.com/embed/track/1dZutYKh4BtPlxbC81wV34?utm_source=generator&t=020"
+                },
+                {
+                    "song_name": "The world was wide enough",
+                    "song_id": "45",
+                    "song_act": 2,
+                    "song_sang_by": "Alexander Hamilton",
+                    "uri_spotify": "https://open.spotify.com/embed/track/0P09TBGSKiQwfUsEh1UafT?utm_source=generator&t=207"
+                },
+                {
+                    "song_name": "Who lives who dies who tells your story",
+                    "song_id": "46",
+                    "song_act": 2,
+                    "song_sang_by": "Aaron Burr",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7EsSVPxaYoAZjQwhspJBs2?utm_source=generator&t=120"
+                }
+            ]
+        }
+    ]
+}

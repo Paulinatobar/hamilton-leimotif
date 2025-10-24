@@ -1,0 +1,854 @@
+<!--Este código fue formateado en: https://pinetools.com/es/formateador-html  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hamilton y leimotif</title>
+	<link rel="icon" type="image/x-icon" href="estilos/img/estrella.jpg">
+	<link rel="stylesheet" href="estilos/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Miss+Fajardose&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+	<body>
+		<header>
+			<div class="hero">
+				<h1 class="hero-title">ANÁLISIS DE LEITMOTIF</h1>
+				<div class="video-container">
+					<video autoplay muted loop playsinline>
+                    <source src="estilos/img/hero-video.mp4" type="video/mp4">
+                </video>
+		</header>
+
+		<section class="intro-section">
+			<h2>Acerca de Hamilton: An american musical</h2>
+			<div>
+				<p>Hamilton: An American Musical (2015), compuesto por Lin-Manuel Miranda, narra el ascenso, caída y muerte de Alexander Hamilton, oficial de la guerra de independencia y primer Secretario del Tesoro de Estados Unidos.</p>
+
+				<p>El musical recontextualiza a Hamilton rescatando sus orígenes como huérfano, inmigrante y opositor a la esclavitud, muy distinto a los otros padres fundadores de familias patricias. Más que enfocarse en temas políticos, explora las características personales que lo llevan a triunfar y caer, y cómo sus errores definen su legado.</p>
+
+				<p>Las 46 canciones se dividen en dos actos. El primero muestra su surgimiento desde inmigrante hasta consolidarse como formador del nuevo gobierno en "Non Stop", pasando por su rivalidad con Aaron Burr y su matrimonio con Eliza Schuyler.</p>
+
+				<p>El segundo acto presenta su caída: sus enemigos publican su amorío y lo acusan de corrupción, la muerte de su hijo mayor aliena a su esposa, y finalmente provoca un duelo con Burr donde decide disparar al aire y muere a los 47 años.</p>
+			</div>
+		</section>
+
+		<section class="non-stop-section">
+			<h2>SIGNIFICADO E IMPLICANCIAS</h2>
+			<div class="content-wrapper">
+				<div class="text-content">
+					<p>
+						La canción "Non-Stop" muestra la ambición y energía incansable de Alexander Hamilton después de la Guerra de Independencia. En ella se ve cómo se convierte en abogado, escribe los Papeles Federalistas y es nombrado Secretario del Tesoro, destacando por su impulso constante. También contrasta su carácter activo con el de Aaron Burr, más reservado, y muestra los sacrificios personales que su dedicación provoca, especialmente con Eliza, su esposa.
+					</p>
+					<p>
+						Además, "Non-Stop" reúne los leimotif de los personajes principales — Hamilton, Burr, Eliza, Angelica y Washington—, funcionando como una síntesis musical y emocional de la obra. Refleja el corazón del musical y de sus protagonistas, mostrando cómo sus motivaciones, deseos y conflictos se entrelazan en una misma gran energía: la de seguir adelante, sin detenerse.
+					</p>
+					<p><em>La identificación de los leitmotifs usadas para este proyecto fueron realizadas por <a href="https://visualhamiltonmusical.wordpress.com/" target="_blank">Visual Hamilton.</a></em></p>
+				</div>
+
+                <!-- Carrusel -->
+				<div class="carousel-container">
+					<div class="carousel">
+						<div class="carousel-slide active">
+							<img src="estilos/img/carrusel-01.jpg" alt="Hamilton Non-Stop 1">
+						</div>
+						<div class="carousel-slide">
+							<img src="estilos/img/carrusel-02.webp" alt="Hamilton Non-Stop 2">
+						</div>
+						<div class="carousel-slide">
+							<img src="estilos/img/carrusel-03.webp" alt="Hamilton Non-Stop 3">
+						</div>
+					</div>
+
+					<button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+					<button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+					<div class="carousel-indicators">
+						<span class="dot active" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- Columna letra canción Non-Stop -->
+		<div class="container">
+			<main>
+				<h1>non stop</h1>
+				<!--Estructura de datos: -->
+				<!-- Los versos tienen un id "v#" por que deben ser únicos (un verso de cada clase por canción) y una clase común "verso" y "nombre personaje"-->
+				<!-- Los nombres del que canta van con clases (porque se pueden repetir) "character"-->
+				<!-- Los Leitmotifs que también pueden haber varios de los mismos en una canción también van con clase "motif" y "código motif"-->
+				<div id="v1" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>After the war, I went back to New York</p>
+				</div>
+				<div id="v2" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>A-After the war, I went back to New York</p>
+				</div>
+				<div id="v3" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>I finished up my studies and I practiced law</p>
+				</div>
+				<div id="v4" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>I practiced law, Burr worked next door</p>
+				</div>
+				<div id="v5" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Even though we started at the very same time</p>
+					<p>Alexander Hamilton began to climb</p>
+					<p>How to account for his rise to the top?</p>
+					<p>Man, the man is</p>
+				</div>
+				<div id="v6" class="verse burr ensemble">
+					<p class="character">[BURR & ENSEMBLE]</p>
+					<p>Non-stop</p>
+				</div>
+				<div id="v7" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Gentlemen of the jury, I'm curious, bear with me</p>
+					<p>Are you aware that we're making history?</p>
+					<p>is the first murder trial of our brand-new nation</p>
+					<p>The liberty behind deliberation</p>
+				</div>
+				<div id="v8" class="verse ensemble">
+					<p class="character">[ENSEMBLE]</p>
+					<p>Non-stop</p>
+				</div>
+				<div id="v9" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>I intend to prove beyond a shadow of a doubt</p>
+					<p>With my assistant counsel—</p>
+				</div>
+				<div id="v10" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Co-counsel</p>
+					<p>Hamilton, sit down</p>
+					<p>Our client Levi Weeks is innocent</p>
+					<p>Call your first witness</p>
+					<p>That's all you had to say</p>
+				</div>
+				<div id="v11" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Okay</p>
+					<p>One more thing—</p>
+				</div>
+				<div id="v12" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Why do you assume you're the smartest in the room?</p>
+					<p>Why do you assume you're the smartest in the room?</p>
+					<p>Why do you assume you're the smartest in the room?</p>
+					<p>Soon that attitude may be your doom</p>
+				</div>
+				<div id="v13" class="verse ensemble">
+					<p class="character">[ENSEMBLE]</p>
+					<p>Aww</p>
+				</div>
+				<div id="v14" class="verse burr ensemble">
+					<p class="character">[BURR, BURR & ENSEMBLE]</p>
+					<p>Why do you write like you're running out of time?</p>
+					<p>Write day and night like you're <span class="motif m13">running out of time?</span></p>
+					<p>Every day you fight like you're <span class="motif m13">running out of time</span></p>
+					<p>Keep on fighting, in the meantime—</p>
+				</div>
+				<div id="v15" class="verse ensemble">
+					<p class="character">[ENSEMBLE]</p>
+					<p>Non-stop</p>
+				</div>
+				<div id="v16" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Corruption's such an old song that we can sing along in harmony</p>
+					<p>And nowhere is it stronger than in Albany</p>
+					<p>This colony's economy's increasingly stalling</p>
+					<p>And honestly, that's why public service seems to be calling me</p>
+				</div>
+				<div id="v17" class="verse burr ensemble">
+					<p class="character">[BURR & ENSEMBLE]</p>
+					<p>He's just non-stop</p>
+				</div>
+				<div id="v18" class="verse hamilton">
+					<p>[HAMILTON]</p>
+					<p>I practiced the law, I practically perfected it</p>
+					<p>I've seen injustice in the world and I've corrected it</p>
+					<p>Now for a strong central democracy</p>
+					<p>If not, then I'll be Socrates</p>
+					<p>Throwing verbal rocks at these mediocrities</p>
+				</div>
+				<div id="v19" class="verse ensemble">
+					<p class="character">[ENSEMBLE]</p>
+					<p>Aww</p>
+				</div>
+				<div id="v20" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Hamilton, at the Constitutional Convention:</p>
+				</div>
+				<div id="v21" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>I was chosen for the Constitutional Convention</p>
+				</div>
+				<div id="v22" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>There as a New York junior delegate:</p>
+				</div>
+				<div id="v23" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Now what I'm gonna say may sound indelicate</p>
+				</div>
+				<div id="v24" class="verse ensemble">
+					<p class="character">[ENSEMBLE]</p>
+					<p>Aww</p>
+				</div>
+				<div id="v25" class="verse burr ensemble">
+					<p>[BURR & COMPANY]</p>
+					<p>Goes and proposes his own form of government (What?)</p>
+					<p>His own plan for a new form of government (What?)</p>
+					<p>Talks for six hours, the convention is listless</p>
+				</div>
+				<div id="v26" class="verse ensemble">
+					<p class="character">[ENSEMBLE MAN #1]</p>
+					<p>Bright young man</p>
+				</div>
+				<div id="v27" class="verse ensemble">
+					<p class="character">[ENSEMBLE MAN #2]</p>
+					<p>Yo, who the F is this?</p>
+				</div>
+				<div id="v28" class="verse burr ensemble">
+					<p class="character">[BURR, BURR & COMPANY]</p>
+					<p>Why do you always say what you believe?</p>
+					<p>Why do you always say what you believe?</p>
+					<p>Every proclamation guarantees free ammunition for your enemies</p>
+				</div>
+				<div id="v29" class="verse ensemble">
+					<p class="character">[ENSEMBLE]</p>
+					<p>Aww</p>
+				</div>
+
+				<div id="v30" class="verse burr">
+					<p class="character">[BURR & MEN, ALL WOMEN]</p>
+					<p>Why do you write like it's going out of style? (Going out of style, hey)</p>
+					<p>Write day and night like it's going out of style (Going out of style, hey)</p>
+				</div>
+
+				<div id="v31" class="verse burr ensemble">
+					<p class="character">[BURR & COMPANY]</p>
+					<p>Every day you fight like it's going out of style</p>
+					<p>Do what you do</p>
+				</div>
+				<div id="v32" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Alexander?</p>
+				</div>
+
+				<div id="v33" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Aaron Burr, sir</p>
+				</div>
+				<div id="v34" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Well, it's the middle of the night</p>
+				</div>
+				<div id="v35" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Can we confer, sir?</p>
+				</div>
+				<div id="v36" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Is this a legal matter?</p>
+				</div>
+				<div id="v37" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Yes, and it's important to me</p>
+				</div>
+				<div id="v38" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>What do you need?</p>
+				</div>
+				<div id="v39" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p> Burr, you're a better lawyer than me</p>
+				</div>
+				<div id="v40" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Okay?</p>
+				</div>
+				<div id="v41" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>I know I talk too much, I'm abrasive</p>
+					<p>You're incredible in court</p>
+					<p>You're succinct, persuasive</p>
+					<p>My client needs a strong defense, you're the solution</p>
+				</div>
+				<div id="v42" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Who's your client?</p>
+				</div>
+				<div id="v43" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>The new U.S. Constitution?</p>
+				</div>
+				<div id="v44" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>No</p>
+				</div>
+				<div id="v45" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Hear me out</p>
+				</div>
+				<div id="v46" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>No way</p>
+				</div>
+				<div id="v47" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>A series of essays, anonymously published</p>
+					<p>Defending the document to the public</p>
+				</div>
+				<div id="v48" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>No one will read it</p>
+				</div>
+				<div id="v49" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>I disagree</p>
+				</div>
+				<div id="v50" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>And if it fails?</p>
+				</div>
+				<div id="v51" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Burr, that's why we need it</p>
+				</div>
+				<div id="v52" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>The constitution's a mess</p>
+				</div>
+				<div id="v53" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>So it needs amendments</p>
+				</div>
+				<div id="v54" class="verse burr">
+					<P class="character">[BURR]</P>
+					<p>It's full of contradictions</p>
+				</div>
+				<div id="v55" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>So is independence</p>
+					<p>We have to start somewhere</p>
+				</div>
+				<div id="v56" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>No, no way</p>
+				</div>
+				<div id="v57" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>You're making a mistake</p>
+				</div>
+				<div id="v58" class="verse burr">
+					<p class="character burr">[BURR]</p>
+					<p>Good night</p>
+				</div>
+				<div id="v59" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Hey</p>
+					<p>What are you waiting for?</p>
+					<p>What do you stall for?</p>
+				</div>
+				<div id="v60" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>What?</p>
+				</div>
+				<div id="v61" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>We won the war, what was it all for?</p>
+					<p>Do you support this constitution?</p>
+				</div>
+				<div id="v62" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Of course</p>
+				</div>
+				<div id="v63" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Then defend it</p>
+				</div>
+				<div id="v64" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>And what if you're backing the wrong horse?</p>
+				</div>
+				<div id="v65" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Burr, we studied and we fought and we killed</p>
+					<p>For the notion of a nation we now get to build</p>
+					<p>For once in your life, <span class="motif m10">take a stand with pride</span></p>
+					<p>I don't understand how you stand to the side</p>
+				</div>
+				<div id="v66" class="verse burr">
+					<p class="character">[BURR, ENSEMBLE, BURR & ENSEMBLE]</p>
+					<p>I'll keep all my plans close to my chest</p>
+					<p><span class="motif m11">Wait for it, wait for it, wait</span></p>
+					<p>I'll wait here and see which way the wind will blow</p>
+					<p>I'm taking my time watching the afterbirth of a nation</p>
+					<p>Watching the tension grow</p>
+				</div>
+				<div id="v67" class="verse angelica">
+					<p class="character">[ANGELICA]</p>
+					<p>I am sailing off to London</p>
+					<p>I'm accompanied by someone who always pays</p>
+					<p>I have found a wealthy husband</p>
+					<p>Who will keep me in comfort for all my days</p>
+					<p>He is not a lot of fun, but there's no one</p>
+					<p>Who can match you for turn of phrase</p>
+					<p>My Alexander</p>
+				</div>
+				<div id="v68" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Angelica</p>
+				</div>
+				<div id="v69" class="verse angelica">
+					<p class="character">[ANGELICA]</p>
+					<p>Don't forget to write</p>
+				</div>
+				<div id="v70" class="verse eliza">
+					<p class="character">[ELIZA]</p>
+					<p>Look at where you are</p>
+					<p>Look at where you started</p>
+					<p>The fact that you're alive is a miracle</p>
+					<p>Just stay alive, <span class="motif m9">that would be enough</span></p>
+					<p>And if your wife could share a fraction of your time</p>
+					<p>If I could grant you peace of mind</p>
+					<p><span class="motif m9">Would that be enough?</span></p>
+				</div>
+				<div id="v71" class="verse burr">
+					<p class="character">[BURR]</p>
+					<p>Alexander joins forces with James Madison and John Jay<br> to write a series of essays defending the new <br> States Constitution, entitled The Federalist Papers</p>
+					<p>The plan was to write a total of twenty-five essays,<br> the work divided evenly among the three men</p>
+					<p>In the end, they wrote eighty-five essays in the span of six months</p>
+					<p>John Jay got sick after writing five</p>
+					<p>James Madison wrote twenty-nine</p>
+					<p>Hamilton wrote the other fifty-one</p>
+				</div>
+				<div id="v72" class="verse burr">
+					<p class="character">[BURR, BURR & ALL WOMEN]</p>
+					<p>How do you write like you're <span class="motif m13">running out of time?</span></p>
+					<p>Write day and night like you're <span class="motif m13">running out of time?</span></p>
+				</div>
+				<div id="v73" class="verse ensemble">
+					<p class="character">[BURR & MEN, ALL WOMEN, BURR, MEN & WOMEN]</p>
+					<p>Every day you fight like you're <span class="motif m13">running out of time</span></p>
+					<p>Like you're <span class="motif m13">running out of time</span></p>
+					<p>Are you <span class="motif m13">running out of time?</span></p>
+					<p>Aww</p>
+				</div>
+				<div id="v74" class="verse ensemble">
+					<p class="character">[FULL COMPANY except HAMILTON]</p>
+					<p>How do you write like tomorrow won't arrive?</p>
+					<p>How do you write like you need it to survive?</p>
+					<p>How do you write every second you're alive?</p>
+					<p>Every second you're alive? Every second you're alive?</p>
+				</div>
+				<div id="v75" class="verse washington">
+					<p class="character">[WASHINGTON]</p>
+					<p>They are asking me to lead</p>
+					<p>I'm doin' the best I can</p>
+					<p>To get the people that I need</p>
+					<p>I'm askin' you to be my <span class="motif m4">right hand man</span></p>
+				</div>
+				<div id="v76" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Treasury or State?</p>
+				</div>
+				<div id="v77" class="verse washington">
+					<p class="character">[WASHINGTON]</p>
+					<p>I know it's a lot to ask</p>
+				</div>
+				<div id="v78" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Treasury or State?</p>
+				</div>
+				<div id="v79" class="verse washington">
+					<p class="character">[WASHINGTON]</p>
+					<p>To leave behind the world you know</p>
+				</div>
+				<div id="v80" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Sir, do you want me to run the Treasury or State department?</p>
+				</div>
+				<div id="v81" class="verse washington">
+					<p class="character">[WASHINGTON]</p>
+					<p>Treasury</p>
+				</div>
+				<div id="v82" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>Let's go</p>
+				</div>
+				<div id="v83" class="verse eliza">
+					<p class="character">[ELIZA]</p>
+					<p>Alexander</p>
+				</div>
+				<div id="v84" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>I have to leave</p>
+				</div>
+				<div id="v85" class="verse eliza">
+					<p class="character">[ELIZA]</p>
+					<p>Alexander</p>
+				</div>
+				<div id="v86" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p><span class="motif m6">Look around, look around at how lucky we are to be alive right now</span></p>
+				</div>
+				<div id="v87" class="verse eliza">
+					<p class="character">[ELIZA]</p>
+					<p><span class="motif m7">Helpless</span></p>
+				</div>
+				<div id="v88" class="verse hamilton">
+					<p class="character">[HAMILTON]</p>
+					<p>They are asking me to lead</p>
+				</div>
+				<div id="v89" class="verse eliza">
+					<p class="character">[ELIZA]</p>
+					<p><span class="motif m6">Look around</span>, <span class="motif m9">isn't this enough?</span></p>
+				</div>
+				<div id="v90" class="verse angelica eliza">
+					<p class="character">[ANGELICA, ELIZA, ANGELICA & ELIZA]</p>
+					<p><span class="motif m8">He will never be satisfied</span> (<span class="motif m9">What would be enough</span>)</p>
+					<p><span class="motif m8">He will never be satisfied (To be satisfied?)</span></p>
+					<p><span class="motif m8">Satisfied, satisfied</span></p>
+				</div>
+				<div id="v91" class="verse ensemble">
+					<p class="character">[WASHINGTON, BURR, ELIZA, ANGELICA & *ENSEMBLE*]</p>
+					<p><span class="motif m5">History has its eyes on you</span></p>
+					<p>Why do you assume you're the smartest in the room?</p>
+					<p>Why do you assume you're the smartest in the room?</p>
+					<p><span class="motif m6">Look around, look around</span></p>
+					<p>*Non-stop*</p>
+					<p>Why do you assume you're the smartest in the room?</p>
+					<p><span class="motif m8">He will never be satisfied, satisfied, satisfied</span></p>
+					<p><span class="motif m9">Isn't this enough? What would be enough?</span></p>
+					<p>*Non-stop*</p>
+					<p>Soon that attitude's gonna be your doom</p>
+				</div>
+				<div id="v92" class="verse ensemble">
+					<p class="character">[WASHINGTON, MULLIGAN, LAURENS & LAFAYETTE, BURR, ENSEMBLE]</p>
+					<p><span class="motif m5">History has its eyes on you</span></p>
+					<p>Non-stop</p>
+					<p>Why do you write like you're <span class="motif m13">running out of time?</span></p>
+					<p>Non-stop</p>
+				</div>
+				<div id="v93" class="verse angelica eliza burr">
+					<p class="character">[ANGELICA, ELIZA & BURR]</p>
+					<p>Why do you fight like</p>
+				</div>
+				<div id="v94" class="verse ensemble">
+					<p class="character">[COMPANY]</p>
+					<p><span class="motif m5">History has its eyes on you</span></p>
+				</div>
+				<div id="v95" class="verse hamilton">
+					<p class="character">[HAMILTON & MEN]</p>
+					<p><span class="motif m12">I am not throwin' away my shot</span> (<span class="motif m3">Just you wait</span>)</p>
+				</div>
+				<div id="v96" class="verse hamilton">
+					<p class="character">[HAMILTON, FULL COMPANY, HAMILTON & COMPANY]</p>
+					<p><span class="motif m12">I am not throwing away my shot</span> (<span class="motif m3">Just you wait</span>)</p>
+					<p>I am Alexander Hamilton, Hamilton</p>
+					<p><span class="motif m3">Just you wait</span></p>
+					<p><span class="motif m12">I am not throwing away my shot!</span></p>
+				</div>
+			</main>
+
+            <!-- Columna derecha de leimotif -->
+			<aside id="sidebar">
+				<div id="sidebar-container">
+					<div id="sidebar-content"></div>
+
+					<div>
+						<iframe id="player" data-testid="embed-iframe" style="border-radius:12px" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
+					<button id="button-next">Siguiente tema</button>
+				</div>
+                <!-- Gráfico de recurrencia (arcos svg) -->
+				<div id="arc-viz">
+					<h4>Recurrencia del leitmotif en el musical</h4>
+					<?xml version="1.0" encoding="UTF-8"?>
+					<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 805">
+                    <defs>
+                    </defs>
+                    <rect id="background" class="cls-1" x="-102.5" y="102.5" width="805" height="600" transform="translate(702.5 102.5) rotate(90)"/>
+                    <g id="arcs">
+                        <g id="m3" class="arc m3">
+                            <path class="cls-3" d="M305,393.89c104.63,0,189.44-84.82,189.44-189.44S409.63,15,305,15"/>
+                        </g>
+                        <g id="m3_m12" class="arc m3 m12">
+                            <path class="cls-3" d="M305,393.89c95.12-.03,172.2-77.16,172.17-172.27-.03-95.08-77.1-172.14-172.17-172.17"/>
+                        </g>
+                        <g id="m3_m7_m8" class="arc m3 m7 m8">
+                            <path class="cls-3" d="M305,393.89c57.07-.02,103.32-46.3,103.29-103.37-.02-57.04-46.26-103.27-103.29-103.29"/>
+                        </g>
+                        <g id="m4_m12" class="arc m4 m12">
+                            <path class="cls-3" d="M305,393.89c71.34-.03,129.15-57.88,129.12-129.21-.03-71.3-57.82-129.09-129.12-129.12"/>
+                        </g>
+                        <g id="m4" class="arc m4">
+                            <path class="cls-3" d="M305,393.89c23.78,0,43.06-19.28,43.06-43.06s-19.28-43.06-43.06-43.06"/>
+                        </g>
+                        <g id="m5" class="arc m5">
+                            <path class="cls-3" d="M305,393.89c42.8,0,77.5,34.7,77.5,77.5s-34.7,77.5-77.5,77.5"/>
+                        </g>
+                        <g id="m5_m11" class="arc m5 m11">
+                            <path class="cls-3" d="M305,393.89c61.83.01,111.94,50.14,111.93,111.96-.01,61.81-50.12,111.92-111.93,111.93"/>
+                        </g>
+                        <g id="m6" class="arc m6">
+                            <path class="cls-3" d="M305,393.89c85.6,0,155-69.4,155-155s-69.4-155-155-155h0"/>
+                        </g>
+                        <g id="m6_m9" class="arc m6 m9">
+                            <path class="cls-3" d="M305,393.89c28.53,0,51.67-23.13,51.67-51.67s-23.13-51.67-51.67-51.67h0"/>
+                        </g>
+                        <g id="m6-2" class="arc m6">
+                            <path class="cls-3" d="M305,393.89c14.27,0,25.83,11.58,25.82,25.85,0,14.25-11.56,25.81-25.82,25.82"/>
+                        </g>
+                        <g id="m6_m9-2" class="arc m6 m9">
+                            <path class="cls-3" d="M305,393.89c85.6,0,155,69.4,155,155s-69.4,155-155,155"/>
+                        </g>
+                        <g id="m7" class="arc m7">
+                            <path class="cls-3" d="M305,393.89c61.83-.01,111.94-50.14,111.93-111.96-.01-61.81-50.12-111.92-111.93-111.93"/>
+                        </g>
+                        <g id="m7-2" class="arc m7">
+                            <path class="cls-3" d="M305,393.89c19.02,0,34.44,15.43,34.44,34.45,0,19.02-15.42,34.43-34.44,34.44"/>
+                        </g>
+                        <g id="m8" class="arc m8">
+                            <path class="cls-3" d="M305,393.89c66.58,0,120.55,53.99,120.54,120.57,0,66.57-53.97,120.53-120.54,120.54"/>
+                        </g>
+                        <g id="m9_m13" class="arc m9 m13">
+                            <path class="cls-3" d="M305,393.89c99.87.02,180.82,80.99,180.81,180.86-.02,99.85-80.96,180.79-180.81,180.81"/>
+                        </g>
+                        <g id="m9_m13-2" class="arc m9 m13">
+                            <path class="cls-3" d="M305,393.89c109.38,0,198.05,88.68,198.04,198.07,0,109.37-88.67,198.04-198.04,198.04"/>
+                        </g>
+                        <g id="m10_m11" class="arc m10">
+                            <path class="cls-3" d="M305,393.89c99.87,0,180.83-80.96,180.83-180.83S404.87,32.22,305,32.22"/>
+                        </g>
+                        <g id="m10_m11-2" class="arc m10 m11">
+                            <path class="cls-3" d="M305,393.89c23.78,0,43.06,19.28,43.06,43.06s-19.28,43.06-43.06,43.06"/>
+                        </g>
+                        <g id="m10" class="arc m10">
+                            <path class="cls-3" d="M305,393.89c95.12.04,172.19,77.18,172.15,172.29-.04,95.06-77.09,172.11-172.15,172.15"/>
+                        </g>
+                        <g id="m11" class="arc">
+                            <path class="cls-3" d="M305,393.89c90.36-.03,163.59-73.3,163.56-163.66-.03-90.32-73.24-163.53-163.56-163.56"/>
+                        </g>
+                        <g id="m11-2" class="arc m11 cls-3">
+                            <path class="cls-3" d="M305,393.89c47.56-.02,86.09-38.59,86.08-86.15-.02-47.53-38.55-86.06-86.08-86.08"/>
+                        </g>
+                        <g id="m11_m12_m13" class="arc m11 m12 m13">
+                            <path class="cls-3" d="M305,393.89c104.63,0,189.44,84.82,189.44,189.44s-84.82,189.44-189.44,189.44"/>
+                        </g>
+                        <g id="m12" class="arc m12">
+                            <path class="cls-3" d="M305,393.89c42.8,0,77.5-34.7,77.5-77.5s-34.7-77.5-77.5-77.5h0"/>
+                        </g>
+                        <g id="m12-2" class="arc m12">
+                            <path class="cls-3" d="M305,393.89c14.27,0,25.83-11.58,25.82-25.85,0-14.25-11.56-25.81-25.82-25.82"/>
+                        </g>
+                        <g id="m5-2" class="arc m5">
+                            <path class="cls-3" d="M309.31,325c19.02,0,34.44,15.43,34.44,34.45,0,19.02-15.42,34.43-34.44,34.44"/>
+                        </g>
+                    </g>
+                    <g id="nodes">
+                        <g>
+                        <circle cx="305" cy="15" r="5"/>
+                        <text class="cls-2" transform="translate(170.27 15)"><tspan x="0" y="0">01. Alexander Hamilton</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="32.22" r="5"/>
+                        <text class="cls-2" transform="translate(195.62 32.22)"><tspan x="0" y="0">02. Aaron Burr, Sir</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="49.44" r="5"/>
+                        <text class="cls-2" transform="translate(230.97 49.44)"><tspan x="0" y="0">03. My Shot</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="66.67" r="5"/>
+                        <text class="cls-2" transform="translate(166.26 66.67)"><tspan x="0" y="0">04. The Story of Tonight</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="83.89" r="5"/>
+                        <text class="cls-2" transform="translate(166.28 83.89)"><tspan x="0" y="0">05. The Schuyler sisters</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="101.11" r="5"/>
+                        <text class="cls-2" transform="translate(190.96 101.11)"><tspan x="0" y="0">06. Farmer Refuted</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="118.33" r="5"/>
+                        <text class="cls-2" transform="translate(200.65 118.33)"><tspan x="0" y="0">07. You&apos;ll be back</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="135.56" r="5"/>
+                        <text class="cls-2" transform="translate(188.27 135.56)"><tspan x="0" y="0">08. Right Hand Man</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="152.78" r="5"/>
+                        <text class="cls-2" transform="translate(197.34 152.78)"><tspan x="0" y="0">09. A Winter&apos;s Ball</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="170" r="5"/>
+                        <text class="cls-2" transform="translate(228.96 170)"><tspan x="0" y="0">10. Helpless</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="187.22" r="5"/>
+                        <text class="cls-2" transform="translate(228.96 187.22)"><tspan x="0" y="0">11. Satisfied</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="204.44" r="5"/>
+                        <text class="cls-2" transform="translate(113.59 204.44)"><tspan x="0" y="0">12. The Story of Tonight (Reprise)</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="221.67" r="5"/>
+                        <text class="cls-2" transform="translate(223.64 221.67)"><tspan x="0" y="0">13. Wait for It</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="238.89" r="5"/>
+                        <text class="cls-2" transform="translate(221.63 238.89)"><tspan x="0" y="0">14. Stay Alive</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="256.11" r="5"/>
+                        <text class="cls-2" transform="translate(134.93 256.11)"><tspan x="0" y="0">15. Ten Duel Commandments</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="273.33" r="5"/>
+                        <text class="cls-2" transform="translate(192.95 273.33)"><tspan x="0" y="0">16. Meet me Inside</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="290.56" r="5"/>
+                        <text class="cls-2" transform="translate(150.91 290.56)"><tspan x="0" y="0">17. That Would Be Enough</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="307.78" r="5"/>
+                        <text class="cls-2" transform="translate(189.6 307.78)"><tspan x="0" y="0">18. Guns and Ships</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="325" r="5"/>
+                        <text class="cls-2" transform="translate(121.33 325)"><tspan x="0" y="0">19. History Has Its Eyes on You</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="342.22" r="5"/>
+                        <text class="cls-2" transform="translate(42.23 342.22)"><tspan x="0" y="0">20. Yorktown (The World Turned Upside Down)</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="359.44" r="5"/>
+                        <text class="cls-2" transform="translate(170.95 359.44)"><tspan x="0" y="0">21. What Comes Next?</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="376.67" r="5"/>
+                        <text class="cls-2" transform="translate(189.6 376.67)"><tspan x="0" y="0">22. Dear Theodosia</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="393.89" r="5"/>
+                        <text class="cls-2" transform="translate(224.29 393.89)"><tspan x="0" y="0">23. Non-Stop</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="411.11" r="5"/>
+                        <text class="cls-2" transform="translate(196.67 411.11)"><tspan x="0" y="0">24. What&apos;d I Miss?</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="428.33" r="5"/>
+                        <text class="cls-2" transform="translate(182.92 428.33)"><tspan x="0" y="0">25. Cabinet Battle #1</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="445.56" r="5"/>
+                        <text class="cls-2" transform="translate(203.62 445.56)"><tspan x="0" y="0">26. Take a Break</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="462.78" r="5"/>
+                        <text class="cls-2" transform="translate(196.29 462.78)"><tspan x="0" y="0">27. Say No to This</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="480" r="5"/>
+                        <text class="cls-2" transform="translate(118.91 480)"><tspan x="0" y="0">28. The Room Where It Happens</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="497.22" r="5"/>
+                        <text class="cls-2" transform="translate(176.26 497.22)"><tspan x="0" y="0">29. Schuyler Defeated</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="514.44" r="5"/>
+                        <text class="cls-2" transform="translate(182.92 514.44)"><tspan x="0" y="0">30. Cabinet Battle #2</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="531.67" r="5"/>
+                        <text class="cls-2" transform="translate(138.9 531.67)"><tspan x="0" y="0">31. Washington on Your Side</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="548.89" r="5"/>
+                        <text class="cls-2" transform="translate(196.29 548.89)"><tspan x="0" y="0">32. One Last Time</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="566.11" r="5"/>
+                        <text class="cls-2" transform="translate(213.64 566.11)"><tspan x="0" y="0">33. I Know Him</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="583.33" r="5"/>
+                        <text class="cls-2" transform="translate(134.26 583.33)"><tspan x="0" y="0">34. The Adams Administration</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="600.56" r="5"/>
+                        <text class="cls-2" transform="translate(223.63 600.56)"><tspan x="0" y="0">35. We Know</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="617.78" r="5"/>
+                        <text class="cls-2" transform="translate(222.96 617.78)"><tspan x="0" y="0">36. Hurricane</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="635" r="5"/>
+                        <text class="cls-2" transform="translate(146.92 635)"><tspan x="0" y="0">37. The Reynolds Pamphlet</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="652.22" r="5"/>
+                        <text class="cls-2" transform="translate(249.64 652.22)"><tspan x="0" y="0">38. Burn</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="669.44" r="5"/>
+                        <text class="cls-2" transform="translate(181.63 669.44)"><tspan x="0" y="0">39. Blow Us All Away</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="686.67" r="5"/>
+                        <text class="cls-2" transform="translate(168.95 686.67)"><tspan x="0" y="0">40. Stay Alive (Reprise)</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="703.89" r="5"/>
+                        <text class="cls-2" transform="translate(183.99 703.89)"><tspan x="0" y="0">41. It&apos;s Quiet Uptown</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="721.11" r="5"/>
+                        <text class="cls-2" transform="translate(164.91 721.11)"><tspan x="0" y="0">42. The Election of 1800</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="738.33" r="5"/>
+                        <text class="cls-2" transform="translate(152.91 738.33)"><tspan x="0" y="0">43. Your Obedient Servant</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="755.56" r="5"/>
+                        <text class="cls-2" transform="translate(92.91 755.56)"><tspan x="0" y="0">44. Best of Wives and Best of Women</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="772.78" r="5"/>
+                        <text class="cls-2" transform="translate(116.92 772.78)"><tspan x="0" y="0">45. The World Was Wide Enough</tspan></text>
+                        </g>
+                        <g>
+                        <circle cx="305" cy="790" r="5"/>
+                        <text class="cls-2" transform="translate(40.25 790)"><tspan x="0" y="0">46. Who Lives, Who Dies, Who Tells Your Story</tspan></text>
+                        </g>
+                    </g>
+                    </svg>
+				</div>
+		</div>
+		</aside>
+		</div>
+		<script src="js/script.js" type="text/javascript" />
+
+	</body>
+</html>
+
+/*Este código fue formateado en: https://pinetools.com/es/formateador-html */
